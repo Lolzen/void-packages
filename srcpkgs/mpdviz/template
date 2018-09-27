@@ -1,0 +1,19 @@
+# Template file for 'mpdviz'
+pkgname=mpdviz
+version=0.4.6
+revision=1
+build_style=go
+hostmakedepends="go git fftw-devel pkg-config libsndfile-devel"
+#makedepends="git"
+depends="fftw"
+short_desc="This is a console visualizer for MPD"
+maintainer="Lolzen <funer@gmx.at>"
+license="MIT License"
+go_import_path="github.com/lucy/mpdviz"
+homepage="http://github.com/lucy/mpdviz"
+distfiles="http://github.com/lucy/mpdviz/archive/${version}.tar.gz"
+checksum=c34243ec3f3d91adbc36d608d5ba7082ff78870f2fd76a6650d5fb3218cc2ba3
+
+post_install() {
+	vlicense LICENSE
+}
