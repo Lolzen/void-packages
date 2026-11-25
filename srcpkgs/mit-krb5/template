@@ -2,7 +2,7 @@
 # if there is a bump in .so version,
 # also update srcpkgs/libgssglue/files/gssapi_mech.conf
 pkgname=mit-krb5
-version=1.21.3
+version=1.22.3
 revision=1
 _distver=$(echo $version | cut -d. -f-2)
 build_style=gnu-configure
@@ -17,7 +17,7 @@ maintainer="Klara Modin <klarasmodin@gmail.com>"
 license="MIT"
 homepage="http://web.mit.edu/kerberos"
 distfiles="http://kerberos.org/dist/krb5/${_distver}/krb5-${version}.tar.gz"
-checksum=b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
+checksum=fe90af8441ad9fa9b064b8e53077cefb782a96f8a68276b031dc54af1789ff0b
 build_options="ldap lmdb"
 build_options_default="ldap"
 desc_option_lmdb="Enable LMDB database backend"
